@@ -21,6 +21,7 @@ CREATE TABLE public.users (
 );
 
 ## Application Flow
+![Application Flow](https://raw.githubusercontent.com/IqraShaikh1/KELP_API_CHALLENGE/main/images/diagram.png)
 
 ```mermaid
 flowchart TD
