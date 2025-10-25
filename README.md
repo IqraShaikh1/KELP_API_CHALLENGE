@@ -22,6 +22,18 @@ CREATE TABLE public.users (
 );
 ```
 
+<<<<<<< HEAD
+=======
+## Application Flow
+![Application Flow](images/diagram.png)
+
+```mermaid
+flowchart TD
+  A[Upload CSV File (via /upload)] --> B[server.js: Handle Upload]
+  B --> C[Custom Parser: Convert CSV to JSON]
+  C --> D[db.js: Save to PostgreSQL]
+  D --> E[Console: Display Age Group Distribution]
+>>>>>>> d9a9a86b724dbf47b4161c8cd620fa1ca27bc1d3
 
 ## How to Run
 git clone https://github.com/IqraShaikh1/KELP_API_CHALLENGE.git
