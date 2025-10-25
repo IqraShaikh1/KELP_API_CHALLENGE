@@ -1,6 +1,7 @@
 # CSV → JSON Converter API
 
 A Node.js + PostgreSQL API that uploads a CSV file, converts it to JSON (using custom parsing — no CSV libraries), stores it in the database, and prints an **age group distribution** report.
+![KELP architecture diagram](images/diagram.png)
 
 ---
 
@@ -20,14 +21,7 @@ CREATE TABLE public.users (
   additional_info JSONB
 );
 
-## Application Flow
 
-```mermaid
-flowchart TD
-  A[Upload CSV File (via /upload)] --> B[server.js: Handle Upload]
-  B --> C[Custom Parser: Convert CSV to JSON]
-  C --> D[db.js: Save to PostgreSQL]
-  D --> E[Console: Display Age Group Distribution]
 
 ## How to Run
 git clone https://github.com/IqraShaikh1/KELP_API_CHALLENGE.git
