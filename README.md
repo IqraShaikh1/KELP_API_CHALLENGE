@@ -18,7 +18,7 @@ CREATE TABLE public.users (
   address JSONB,
   additional_info JSONB
 );
----
+
 ## Application Flow
 
 ```mermaid
@@ -27,7 +27,6 @@ flowchart TD
   B --> C[Custom Parser: Convert CSV to JSON]
   C --> D[db.js: Save to PostgreSQL]
   D --> E[Console: Display Age Group Distribution]
----
 
 ## How to Run
 git clone https://github.com/IqraShaikh1/KELP_API_CHALLENGE.git
