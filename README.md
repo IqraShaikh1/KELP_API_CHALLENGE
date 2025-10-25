@@ -4,12 +4,12 @@ A Node.js + PostgreSQL API that uploads a CSV file, converts it to JSON (using c
 
 ---
 
-## ⚙️ Tech Stack
+##  Tech Stack
 **Node.js (Express)** • **PostgreSQL** • **dotenv** • **Custom CSV Parser**
 
 ---
 
-## 🗄️ Database Schema
+##  Database Schema
 ```sql
 CREATE TABLE public.users (
   id SERIAL PRIMARY KEY,
@@ -18,7 +18,18 @@ CREATE TABLE public.users (
   address JSONB,
   additional_info JSONB
 );
-How to Run
+---
+## Application Flow
+
+```mermaid
+flowchart TD
+  A[Upload CSV File (via /upload)] --> B[server.js: Handle Upload]
+  B --> C[Custom Parser: Convert CSV to JSON]
+  C --> D[db.js: Save to PostgreSQL]
+  D --> E[Console: Display Age Group Distribution]
+---
+
+## How to Run
 git clone https://github.com/IqraShaikh1/KELP_API_CHALLENGE.git
 cd KELP_API_CHALLENGE
 npm install
