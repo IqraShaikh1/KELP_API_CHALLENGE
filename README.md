@@ -20,6 +20,7 @@ CREATE TABLE public.users (
   address JSONB,
   additional_info JSONB
 );
+
 ```
 
 
