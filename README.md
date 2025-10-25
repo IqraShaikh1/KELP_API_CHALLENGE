@@ -10,6 +10,7 @@ A Node.js + PostgreSQL API that uploads a CSV file, converts it to JSON (using c
 ---
 
 ##  Database Schema
+
 ```sql
 CREATE TABLE public.users (
   id SERIAL PRIMARY KEY,
